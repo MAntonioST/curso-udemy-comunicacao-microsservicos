@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "TB_SUPPLIER")
+@Table(name = "SUPPLIER")
 public class Supplier {
 
     @Id
@@ -25,7 +25,7 @@ public class Supplier {
 
     public static Supplier of(SupplierRequest request) {
         var supplier = new Supplier();
-       BeanUtils.copyProperties(request, supplier);
+        BeanUtils.copyProperties(request, supplier);
         return supplier;
     }
 }

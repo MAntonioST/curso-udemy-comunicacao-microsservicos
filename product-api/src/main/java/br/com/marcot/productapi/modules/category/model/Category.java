@@ -1,8 +1,6 @@
 package br.com.marcot.productapi.modules.category.model;
 
-
 import br.com.marcot.productapi.modules.category.dto.CategoryRequest;
-import br.com.marcot.productapi.modules.product.dto.ProductRequest;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +12,7 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "TB_CATEGORY")
+@Table(name = "CATEGORY")
 public class Category {
 
     @Id

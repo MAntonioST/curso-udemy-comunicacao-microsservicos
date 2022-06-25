@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "TB_PRODUCT")
+@Table(name = "PRODUCT")
 public class Product {
 
     @Id
@@ -50,12 +50,12 @@ public class Product {
                              Supplier supplier,
                              Category category) {
         return Product
-            .builder()
-            .name(request.getName())
-            .quantityAvailable(request.getQuantityAvailable())
-            .supplier(supplier)
-            .category(category)
-            .build();
+                .builder()
+                .name(request.getName())
+                .quantityAvailable(request.getQuantityAvailable())
+                .supplier(supplier)
+                .category(category)
+                .build();
     }
 
     public void updateStock(Integer quantity) {
